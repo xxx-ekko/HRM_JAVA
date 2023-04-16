@@ -24,7 +24,7 @@ import javax.persistence.Table;
 @NamedQueries({
     @NamedQuery(name = "Administrateur.findAll", query = "SELECT a FROM Administrateur a"),
     @NamedQuery(name = "Administrateur.findById", query = "SELECT a FROM Administrateur a WHERE a.id = :id"),
-    @NamedQuery(name = "Administrateur.findByNom", query = "SELECT a FROM Administrateur a WHERE a.nom = :nom"),
+    @NamedQuery(name = "Administrateur.findByNom", query = "SELECT a FROM Administrateur a WHERE a.login = :login"),
     @NamedQuery(name = "Administrateur.findByPrenom", query = "SELECT a FROM Administrateur a WHERE a.prenom = :prenom"),
     @NamedQuery(name = "Administrateur.findByEmail", query = "SELECT a FROM Administrateur a WHERE a.email = :email"),
     @NamedQuery(name = "Administrateur.findByMotDePasse", query = "SELECT a FROM Administrateur a WHERE a.motDePasse = :motDePasse")})
@@ -37,8 +37,8 @@ public class Administrateur implements Serializable {
     @Column(name = "id")
     private Integer id;
     @Basic(optional = false)
-    @Column(name = "nom")
-    private String nom;
+    @Column(name = "login")
+    private String login;
     @Basic(optional = false)
     @Column(name = "prenom")
     private String prenom;
@@ -56,9 +56,9 @@ public class Administrateur implements Serializable {
         this.id = id;
     }
 
-    public Administrateur(Integer id, String nom, String prenom, String email, String motDePasse) {
+    public Administrateur(Integer id, String login, String prenom, String email, String motDePasse) {
         this.id = id;
-        this.nom = nom;
+        this.login = login;
         this.prenom = prenom;
         this.email = email;
         this.motDePasse = motDePasse;
@@ -72,12 +72,12 @@ public class Administrateur implements Serializable {
         this.id = id;
     }
 
-    public String getNom() {
-        return nom;
+    public String getLogin() {
+        return login;
     }
 
-    public void setNom(String nom) {
-        this.nom = nom;
+    public void setLogin(String login) {
+        this.login = login;
     }
 
     public String getPrenom() {

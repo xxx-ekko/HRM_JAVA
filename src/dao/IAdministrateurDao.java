@@ -17,5 +17,6 @@ public interface IAdministrateurDao {
     public boolean deleteAdministrateur(Administrateur admin);
     public Administrateur findAdministrateurById(int id);
     public List<Administrateur> findAllAdministrateurs();
-    boolean authentifier(String prenom, String nom, String motDePasse);
+    boolean authentifier(String login, String motDePasse);
+    
 }

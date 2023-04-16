@@ -3,27 +3,10 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/Users/ekko/NetBeansProjects/HRM/src/services/AdministrateurService.java</file>
-            <file>file:/Users/ekko/NetBeansProjects/HRM/src/services/EmployePosteService.java</file>
-            <file>file:/Users/ekko/NetBeansProjects/HRM/src/utils/EntityManagerUtil.java</file>
-            <file>file:/Users/ekko/NetBeansProjects/HRM/src/models/Departement.java</file>
-            <file>file:/Users/ekko/NetBeansProjects/HRM/src/services/EmployeService.java</file>
-            <file>file:/Users/ekko/NetBeansProjects/HRM/src/models/EmployeDepartement.java</file>
-            <file>file:/Users/ekko/NetBeansProjects/HRM/src/dao/IDepartementDao.java</file>
-            <file>file:/Users/ekko/NetBeansProjects/HRM/src/META-INF/persistence.xml</file>
-            <file>file:/Users/ekko/NetBeansProjects/HRM/src/dao/IAdministrateurDao.java</file>
-            <file>file:/Users/ekko/NetBeansProjects/HRM/src/dao/IPosteDao.java</file>
-            <file>file:/Users/ekko/NetBeansProjects/HRM/src/models/Poste.java</file>
-            <file>file:/Users/ekko/NetBeansProjects/HRM/src/models/Employe.java</file>
-            <file>file:/Users/ekko/NetBeansProjects/HRM/src/services/DepartementService.java</file>
-            <file>file:/Users/ekko/NetBeansProjects/HRM/src/dao/IEmployePosteDao.java</file>
-            <file>file:/Users/ekko/NetBeansProjects/HRM/src/services/PosteService.java</file>
-            <file>file:/Users/ekko/NetBeansProjects/HRM/src/dao/IEmployeDao.java</file>
-            <file>file:/Users/ekko/NetBeansProjects/HRM/src/hrm/HRM.java</file>
-            <file>file:/Users/ekko/NetBeansProjects/HRM/src/models/Administrateur.java</file>
-            <file>file:/Users/ekko/NetBeansProjects/HRM/src/models/EmployePoste.java</file>
-            <file>file:/Users/ekko/NetBeansProjects/HRM/src/dao/IEmployeDepartementDao.java</file>
-            <file>file:/Users/ekko/NetBeansProjects/HRM/src/services/EmployeDepartementService.java</file>
+            <file>file:/C:/Users/bmd_tech/Documents/HRM/src/windows/AdminLoginWindow.java</file>
+            <file>file:/C:/Users/bmd_tech/Documents/HRM/src/windows/AdminMainWindow.java</file>
+            <file>file:/C:/Users/bmd_tech/Documents/HRM/src/windows/Employes.java</file>
+            <file>file:/C:/Users/bmd_tech/Documents/HRM/src/windows/RegistreAdmin.java</file>
         </group>
     </open-files>
 </project-private>
