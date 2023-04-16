@@ -4,7 +4,10 @@
  */
 package windows;
 
+import java.awt.Color;
+import javax.swing.BorderFactory;
 import javax.swing.JOptionPane;
+import javax.swing.border.MatteBorder;
 import services.AdministrateurService;
 
 /**
@@ -19,6 +22,11 @@ public class AdminLoginWindow extends javax.swing.JFrame {
     public AdminLoginWindow() {
         initComponents();
         adminService = new AdministrateurService();
+        
+           //Pour centrer
+         this.setLocationRelativeTo(null); 
+        
+        
     }
 
     /**
@@ -30,21 +38,169 @@ public class AdminLoginWindow extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jPanel1 = new javax.swing.JPanel();
+        jLabel3 = new javax.swing.JLabel();
+        btnLogin = new javax.swing.JButton();
+        txtMotDePasse = new javax.swing.JPasswordField();
+        jLabel4 = new javax.swing.JLabel();
+        txtLogin = new javax.swing.JTextField();
+        jLabel5 = new javax.swing.JLabel();
+        jPanel2 = new javax.swing.JPanel();
+        jLabel1 = new javax.swing.JLabel();
+        nouvAdmin_txt = new javax.swing.JLabel();
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+
+        jPanel1.setBackground(new java.awt.Color(255, 255, 255));
+
+        jLabel3.setFont(new java.awt.Font("Segoe UI Black", 3, 18)); // NOI18N
+        jLabel3.setText("Mot de passe");
+
+        btnLogin.setBackground(new java.awt.Color(0, 204, 51));
+        btnLogin.setFont(new java.awt.Font("Segoe UI Black", 0, 16)); // NOI18N
+        btnLogin.setIcon(new javax.swing.ImageIcon("C:\\Users\\bmd_tech\\Documents\\Icone\\connexion-48.png")); // NOI18N
+        btnLogin.setText("Se connecter");
+        btnLogin.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnLoginActionPerformed(evt);
+            }
+        });
+
+        jLabel4.setFont(new java.awt.Font("Segoe UI Black", 3, 18)); // NOI18N
+        jLabel4.setText("Login");
+
+        jLabel5.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel5.setIcon(new javax.swing.ImageIcon("C:\\Users\\bmd_tech\\Documents\\Icone\\login_2.jpg")); // NOI18N
+
+        jPanel2.setBackground(new java.awt.Color(0, 153, 255));
+
+        jLabel1.setFont(new java.awt.Font("Wide Latin", 3, 24)); // NOI18N
+        jLabel1.setText("LOGIN ");
+
+        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
+        jPanel2.setLayout(jPanel2Layout);
+        jPanel2Layout.setHorizontalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jLabel1)
+                .addGap(200, 200, 200))
+        );
+        jPanel2Layout.setVerticalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, 75, Short.MAX_VALUE)
+                .addContainerGap())
+        );
+
+        nouvAdmin_txt.setText("Vous n'avez pas encore un compte? Cliqué ICI !");
+        nouvAdmin_txt.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                nouvAdmin_txtMouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                nouvAdmin_txtMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                nouvAdmin_txtMouseExited(evt);
+            }
+        });
+
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(nouvAdmin_txt)
+                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                        .addComponent(btnLogin)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel1Layout.createSequentialGroup()
+                                .addComponent(jLabel4)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(txtLogin, javax.swing.GroupLayout.PREFERRED_SIZE, 155, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel1Layout.createSequentialGroup()
+                                .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 129, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(30, 30, 30)
+                                .addComponent(txtMotDePasse, javax.swing.GroupLayout.PREFERRED_SIZE, 155, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 255, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        );
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(82, 82, 82)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(txtLogin, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel4))
+                        .addGap(34, 34, 34)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(txtMotDePasse, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel3))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(btnLogin, javax.swing.GroupLayout.PREFERRED_SIZE, 54, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(nouvAdmin_txt)
+                        .addGap(18, 18, 18))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 22, Short.MAX_VALUE)
+                        .addComponent(jLabel5))))
+        );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void btnLoginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLoginActionPerformed
+        // TODO add your handling code here:
+    String login = txtLogin.getText();
+    String motDePasse = new String(txtMotDePasse.getPassword());
+
+    AdministrateurService administrateurService = new AdministrateurService();
+
+    if (administrateurService.authentifier(login, motDePasse)) {
+        // Authentification réussie
+        JOptionPane.showMessageDialog(this, "Authentification réussie !");
+        this.dispose();
+        new AdminMainWindow().setVisible(true);
+    } else {
+        // Authentification échouée
+        JOptionPane.showMessageDialog(this, "Login d'utilisateur ou mot de passe incorrect !");
+    }
+        
+    }//GEN-LAST:event_btnLoginActionPerformed
+
+    private void nouvAdmin_txtMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_nouvAdmin_txtMouseClicked
+        this.setVisible(false);
+        new RegistreAdmin().setVisible(true);               
+    }//GEN-LAST:event_nouvAdmin_txtMouseClicked
+
+    private void nouvAdmin_txtMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_nouvAdmin_txtMouseExited
+        MatteBorder label_create_accont_border = BorderFactory.createMatteBorder(0, 0, 1, 0, Color.yellow);
+        nouvAdmin_txt.setBorder(null);
+    }//GEN-LAST:event_nouvAdmin_txtMouseExited
+
+    private void nouvAdmin_txtMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_nouvAdmin_txtMouseEntered
+        MatteBorder label_border = BorderFactory.createMatteBorder(1, 1, 1, 1, Color.black);
+        nouvAdmin_txt.setBorder(label_border);
+    }//GEN-LAST:event_nouvAdmin_txtMouseEntered
 
     /**
      * @param args the command line arguments
@@ -82,5 +238,15 @@ public class AdminLoginWindow extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnLogin;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel2;
+    private javax.swing.JLabel nouvAdmin_txt;
+    private javax.swing.JTextField txtLogin;
+    private javax.swing.JPasswordField txtMotDePasse;
     // End of variables declaration//GEN-END:variables
 }

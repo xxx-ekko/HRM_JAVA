@@ -55,13 +55,12 @@ public class AdministrateurService implements IAdministrateurDao {
     }
     
     @Override
-public boolean authentifier(String prenom, String nom, String motDePasse) {
+public boolean authentifier(String login, String motDePasse) {
     try {
-        String query = "SELECT a FROM Administrateur a WHERE a.prenom = :prenom AND a.nom = :nom AND a.motDePasse = :motDePasse";
+        String query = "SELECT a FROM Administrateur a WHERE a.login = :login AND a.motDePasse = :motDePasse";
         Administrateur administrateur = emUtil.getEntityManager()
                 .createQuery(query, Administrateur.class)
-                .setParameter("prenom", prenom)
-                .setParameter("nom", nom)
+                .setParameter("login", login)
                 .setParameter("motDePasse", motDePasse)
                 .getSingleResult();
         return administrateur != null;
